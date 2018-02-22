@@ -1,0 +1,7 @@
+header a {
+  margin-right: 10px;
+}
+
+header a:last-child {
+  margin-right: 0px;
+}
