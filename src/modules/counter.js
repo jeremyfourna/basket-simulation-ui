@@ -25,30 +25,30 @@ export function counter(state = initialState, action) {
       return {
         ...state,
         isIncrementing: T()
-      }
+      };
 
     case INCREMENT:
       return {
         ...state,
         count: inc(p('count')),
         isIncrementing: not(p('isIncrementing'))
-      }
+      };
 
     case DECREMENT_REQUESTED:
       return {
         ...state,
         isDecrementing: T()
-      }
+      };
 
     case DECREMENT:
       return {
         ...state,
         count: dec(p('count')),
         isDecrementing: not(p('isDecrementing'))
-      }
+      };
 
     default:
-      return state
+      return state;
   }
 }
 
